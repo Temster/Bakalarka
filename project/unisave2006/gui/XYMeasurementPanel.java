@@ -71,7 +71,7 @@ import java.awt.event.KeyEvent;
 import unisave2006.gui.value.MeasurementEntityConstructionException;
 import unisave2006.gui.value.ValuePanel;
 import javax.swing.JButton;
-
+//
 /**
  * @author David Je�ek
  *
