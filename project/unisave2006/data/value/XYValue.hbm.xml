@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.data.value">
+  <subclass name="XYValue" extends="MeasurementEntry" discriminator-value="XYV">
+  	<property name="indexXY"></property>
+  	<many-to-one name="XValue" class="Value" cascade="save-update"></many-to-one>
+  	<many-to-one name="YValue" class="Value" cascade="save-update"></many-to-one>
+  	<many-to-one name="measurement" class="unisave2006.data.MeasurementPOJO" column="MSM_ID"></many-to-one>
+  </subclass>
+</hibernate-mapping>

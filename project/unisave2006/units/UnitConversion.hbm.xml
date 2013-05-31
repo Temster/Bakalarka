@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.units">
+  <class name="UnitConversion" table="UNIT_CONVERSION">
+  	<id name="id" column="CONVERSION_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="multiplier"></property>
+  	<property name="divider"></property>
+  	<property name="offset"></property>
+  	<property name="offset2"></property>
+  	
+  	<many-to-one name="from" class="UnitDescription" column="FROM_UNIT" not-null="true"></many-to-one>
+  	<many-to-one name="to" class="UnitDescription" column="TO_UNIT" not-null="true"></many-to-one>
+  </class>
+</hibernate-mapping>

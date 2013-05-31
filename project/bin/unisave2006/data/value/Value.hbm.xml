@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.data.value">
+  <subclass name="Value" extends="MeasurementEntry" discriminator-value="VAL">
+  	<property name="valueVal"/>
+  	<property name="indexVal"/>
+  	<many-to-one name="unit" class="unisave2006.units.Unit" cascade="save-update" />
+  </subclass>
+</hibernate-mapping>

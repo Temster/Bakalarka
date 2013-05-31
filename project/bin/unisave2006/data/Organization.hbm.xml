@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.data">
+  <class name="Organization">
+  	<id name="id" column="ORG_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="isCustomer"></property>
+  	<property name="name"/>
+  	<property name="tel"/>
+  	<many-to-one name="address" class="Address" column="ADDR_ID"
+  		not-null="true" cascade="all" unique="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.grabber">
+  <class name="GrabberInterface" table="GRABBER">
+  	<id type="integer" column="GRABBER_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<discriminator column="DISCRIMINATOR" type="string"/>
+  </class>
+</hibernate-mapping>

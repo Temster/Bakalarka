@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.data">
+  <class name="MeasurementPOJO" table="MEASUREMENT">
+  	<id name="id" column="MSM_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<discriminator column="DISCRIMINATOR" type="string"></discriminator>
+  	<property name="autoIndex"/>
+  	<property name="autoConvert"/>	
+  	<many-to-one name="protocolSetting" class="ProtocolSetting" cascade="save-update"/>
+  	<many-to-one name="autoConvertUnit" class="unisave2006.units.Unit" cascade="save-update"/>
+  	<list name="elements" cascade="all, delete-orphan" inverse="true">
+  		<key column="MSM_ID"></key>
+  		<list-index column="indexXY"/>
+  		<one-to-many class="unisave2006.data.value.MeasurementEntry"/>
+  	</list>
+  	
+  </class>
+  
+</hibernate-mapping>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unitsDefinition>
+	<prefixes>
+		<pref name="yotta" shortcut="Y" exp="24" />
+		<pref name="zetta" shortcut="Z" exp="21" />
+		<pref name="exa" shortcut="E" exp="18" />
+		<pref name="peta" shortcut="P" exp="15" />
+		<pref name="tera" shortcut="T" exp="12" />
+		<pref name="giga" shortcut="G" exp="9" />
+		<pref name="mega" shortcut="M" exp="6" />
+		<pref name="kilo" shortcut="k" exp="3" />
+		<pref name="hekto" shortcut="h" exp="2" />
+		<pref name="deka" shortcut="da" exp="1" />
+		<pref name="" shortcut="" exp="0" />
+		<pref name="deci" shortcut="d" exp="-1" />
+		<pref name="centi" shortcut="c" exp="-2" />
+		<pref name="mili" shortcut="m" exp="-3" />
+		<pref name="mikro" shortcut="µ" exp="-6" />
+		<pref name="nano" shortcut="n" exp="-9" />
+		<pref name="piko" shortcut="p" exp="-12" />
+		<pref name="femto" shortcut="f" exp="-15" />
+		<pref name="atto" shortcut="a" exp="-18" />
+		<pref name="zepto" shortcut="z" exp="-21" />
+		<pref name="yocto" shortcut="y" exp="-24" />
+	</prefixes>
+	<units>
+		<unit index="0" name="" shortcut="" prefixAvailable="false" />
+		<unit index="1" name="procento" shortcut="%"
+			prefixAvailable="false" />
+		<unit index="9" name="promile" shortcut="‰" prefixAvailable="false" />
+		<unit index="2" name="metr" shortcut="m" prefixAvailable="true" />
+		<unit index="3" name="mikropalec" shortcut="microinch"
+			prefixAvailable="false" ></unit>
+		<unit index="4" name="milipalec" shortcut="mil"
+			prefixAvailable="false" ></unit>
+		<unit index="5" name="palec" shortcut="in" prefixAvailable="false" ></unit>
+		<unit index="6" name="stopa" shortcut="ft" prefixAvailable="false" ></unit>
+		<unit index="7" name="yard" shortcut="yd" prefixAvailable="false" />
+		<unit index="8" name="míle" shortcut="mi" prefixAvailable="false" />
+		<unit index="10" name="newton" shortcut="N" prefixAvailable="true" />
+	</units>
+	<conversions>
+		<conv from="2" to="3" multiplier="1" divider="2.54e-8"
+			offset1="0" offset2="0" />
+		<conv from="2" to="4" multiplier="1" divider="2.54e-5"
+			offset1="0" offset2="0" />
+		<conv from="2" to="5" multiplier="1" divider="2.54e-2"
+			offset1="0" offset2="0" />
+		<conv from="2" to="6" multiplier="1" divider="0.3048"
+			offset1="0" offset2="0" />
+		<conv from="2" to="7" multiplier="1" divider="0.9144"
+			offset1="0" offset2="0" />
+		<conv from="2" to="8" multiplier="1" divider="1.609344e+3"
+			offset1="0" offset2="0" ></conv>
+		<conv from="3" to="2" multiplier="2.54e-8" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="3" to="4" multiplier="1e-3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="3" to="5" multiplier="1e-6" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="3" to="6" multiplier="1e-6" divider="12" offset1="0"
+			offset2="0" />
+		<conv from="3" to="7" multiplier="1e-6" divider="36" offset1="0"
+			offset2="0" />
+		<conv from="3" to="8" multiplier="1e-6" divider="63360"
+			offset1="0" offset2="0" />
+		<conv from="4" to="2" multiplier="2.54e-5" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="4" to="3" multiplier="1e+3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="4" to="5" multiplier="1e-3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="4" to="6" multiplier="1e-3" divider="12" offset1="0"
+			offset2="0" />
+		<conv from="4" to="7" multiplier="1e-3" divider="36" offset1="0"
+			offset2="0" />
+		<conv from="4" to="8" multiplier="1e-3" divider="63360"
+			offset1="0" offset2="0" />
+		<conv from="5" to="2" multiplier="2.54e-2" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="5" to="3" multiplier="1e6" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="5" to="4" multiplier="1e3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="5" to="6" multiplier="1" divider="12" offset1="0"
+			offset2="0" />
+		<conv from="5" to="7" multiplier="1" divider="36" offset1="0"
+			offset2="0" />
+		<conv from="5" to="8" multiplier="1" divider="63360" offset1="0"
+			offset2="0" />
+		<conv from="6" to="2" multiplier="0.3048" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="6" to="3" multiplier="12e6" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="6" to="4" multiplier="12e3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="6" to="5" multiplier="12" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="6" to="7" multiplier="1" divider="3" offset1="0"
+			offset2="0" />
+		<conv from="6" to="8" multiplier="1" divider="5280" offset1="0"
+			offset2="0" />
+		<conv from="7" to="2" multiplier="0.9144" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="7" to="3" multiplier="36e6" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="7" to="4" multiplier="36e3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="7" to="5" multiplier="36" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="7" to="6" multiplier="3" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="7" to="8" multiplier="1" divider="1760" offset1="0"
+			offset2="0" />
+		<conv from="8" to="2" multiplier="1609.344" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="8" to="3" multiplier="63360e6" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="8" to="4" multiplier="63360e3" divider="1"
+			offset1="0" offset2="0" />
+		<conv from="8" to="5" multiplier="63360" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="8" to="6" multiplier="5280" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="8" to="7" multiplier="1760" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="1" to="9" multiplier="100" divider="1" offset1="0"
+			offset2="0" />
+		<conv from="9" to="1" multiplier="1" divider="100" offset1="0"
+			offset2="0" />
+	</conversions>
+</unitsDefinition>

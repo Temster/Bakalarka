@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/unisave</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+    	<property name="hibernate.max_fetch_depth">4</property>
+    	<property name="hibernate.show_sql">true</property>
+    	<property name="hibernate.format_sql">true</property>
+        <property name="hibernate.use_sql_comments">true</property>
+    	<property name="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+    	<property name="hibernate.current_session_context_class">thread</property>
+    	<property name="hibernate.hbm2ddl.auto">update</property>
+    	
+
+    	<mapping resource="unisave2006/units/UnitPrefix.hbm.xml"/>
+		<mapping resource="unisave2006/units/UnitDescription.hbm.xml"/>
+		<mapping resource="unisave2006/units/UnitConversion.hbm.xml"/>
+		<mapping resource="unisave2006/units/Unit.hbm.xml"/>
+		
+		<mapping resource="unisave2006/data/Address.hbm.xml"/>
+		<mapping resource="unisave2006/data/GraphSetting.hbm.xml"/>
+		<mapping resource="unisave2006/data/Organization.hbm.xml"/>
+		<mapping resource="unisave2006/data/Employee.hbm.xml"/>
+		<mapping resource="unisave2006/data/Measurer.hbm.xml"/>
+		<mapping resource="unisave2006/data/ProtocolSetting.hbm.xml"/>
+  		<mapping resource="unisave2006/data/MeasurementPOJO.hbm.xml"/>
+		<mapping resource="unisave2006/data/XYMeasurementPOJO.hbm.xml"/>
+
+		<mapping resource="unisave2006/device/CommDeviceSetting.hbm.xml"/>
+		<mapping resource="unisave2006/device/SerialCommDeviceSetting.hbm.xml"/>
+		<mapping resource="unisave2006/device/IrdaSerialCommDeviceSetting.hbm.xml"/>
+		<mapping resource="unisave2006/device/NullCommDevice.hbm.xml"/>
+		<mapping resource="unisave2006/device/CommSettings.hbm.xml"/>
+		<mapping resource="unisave2006/device/CommTimeouts.hbm.xml"/>
+		<mapping resource="unisave2006/device/MeasurementDevice.hbm.xml"/>
+		<mapping resource="unisave2006/device/DoubleMeasurementDevice.hbm.xml"/>
+		  
+		<mapping resource="unisave2006/data/value/MeasurementEntry.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/BlockSeparator.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/Value.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/NamedValue.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/Text.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/XYValue.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/Statistic.hbm.xml"/>
+		<mapping resource="unisave2006/data/value/StatBlockSeparator.hbm.xml"/>
+   		
+		<mapping resource="unisave2006/grabber/GrabberInterface.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/AbstractGrabber.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/ManualGrabber.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/DoubleGrabber.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/AsciiGrabber.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/ElectroPhysicAsciiGrabber.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/MahrAsciiGrabber.hbm.xml"/>
+		<mapping resource="unisave2006/grabber/MitutoyoAsciiGrabber.hbm.xml"/>
+		    
+		<mapping resource="unisave2006/PortName.hbm.xml"/>
+		<mapping resource="unisave2006/UserSetting.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

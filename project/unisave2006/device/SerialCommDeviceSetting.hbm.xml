@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.device">
+  <subclass name="SerialCommDeviceSetting" extends="CommDeviceSetting" 
+  discriminator-value="SER">
+  	<property name="clearInputBuffer"/>
+  	<property name="comName"/>
+  	<many-to-one name="commSettings" class="unisave2006.device.CommSettings" column="COM_SETTINGS"/>
+  	<many-to-one name="commTimeouts" class="unisave2006.device.CommTimeouts" column="COM_TIMEOUTS"/>
+  </subclass>
+</hibernate-mapping>

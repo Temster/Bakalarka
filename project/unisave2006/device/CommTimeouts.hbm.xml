@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.device">
+  <class name="CommTimeouts" table="COMM_TIMEOUTS">
+  	<id name="id" column="COM_TIMEOUT_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="readIntervalTimeout"/>
+  	<property name="readTotalTimeoutConstant"/>
+  	<property name="readTotalTimeoutMultiplier"/>
+  	<property name="writeTotalTimeoutConstant"/>
+  	<property name="writeTotalTimeoutMultiplier"/>
+  </class>
+</hibernate-mapping>

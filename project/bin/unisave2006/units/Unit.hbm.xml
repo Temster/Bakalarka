@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.units">
+  <class name="Unit" table="UNIT">
+  	<id name="id" column="UNIT_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	
+  	<many-to-one name="description" column="DESCRIPTION" class="UnitDescription" cascade="save-update"/>
+  	<many-to-one name="prefix" column="PREFIX" class="UnitPrefix" cascade="none"/>
+  </class>
+</hibernate-mapping>

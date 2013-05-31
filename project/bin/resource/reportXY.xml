@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE report PUBLIC "-//JFreeReport//DTD report definition//EN//simple/version 0.8.5"
+                        "http://jfreereport.sourceforge.net/report-085.dtd">
+
+<!-- This report only accepts A4 paper (595x842 pt) -->
+<report name="Protokol o měření" orientation="portrait"
+  pageformat="A4" topmargin="10" leftmargin="10" bottommargin="10" rightmargin="10">
+
+  <!--
+    The configuration tag can be used to define initial values for the report configuration.
+    The report configuration defines several keys, which are read during the report
+    processing.
+    -->
+  <configuration>
+    <property name="org.jfree.report.modules.output.pageable.pdf.Encoding">UTF-8</property>
+    <property name="org.jfree.report.modules.output.pageable.pdf.Author">UniSave 2006</property>
+	<property name="org.jfree.report.modules.output.pageable.pdf.EmbedFonts">true</property>
+  </configuration>
+
+  <!--
+    The watermark is a special section. It always consumes the complete space on a page.
+    Output targets can choose whether to support this section, at the moment only the
+    PDF and Graphics2D output support watermarks, HTML will follow in the near future.
+
+    The water mark band accepts all element types, and is printed together with the
+    page header.
+  -->
+  <groups>
+    <group name="Info-Group">
+      <groupheader height="300" fontsize="12" vertical-alignment="bottom" pagebreak-before-print="true">
+        <rectangle    x="0"   y="0"   width="565" height="72" color="black" draw="true" fill="false"/>
+        <string-field x="10"  y="10"  width="540" height="24" fontname="Arial"  alignment="center" fieldname="laboratory.name" fontsize="14" fsbold="true"/>
+        <string-field x="10"  y="36"  width="540" height="12" fontname="Arial"  alignment="center" fieldname="laboratory.address.street"/>
+        <string-field x="10"  y="50"  width="265" height="12" fontname="Arial"  alignment="right"  fieldname="laboratory.address.psc"/>
+        <string-field x="285" y="50"  width="265" height="12" fontname="Arial"  alignment="left"   fieldname="laboratory.address.city"/>
+
+        <string-field x="30"  y="82"  width="510" height="24" fontname="Arial"  alignment="left"   fieldname="measurementTitle" fsbold="true"  fontsize="20" />
+
+        <label        x="40"  y="120" width="150" height="12" fontname="Arial"  fsbold="true" alignment="right">Zadavatel:</label>
+        <string-field x="200" y="120" width="380" height="12" fontname="Courier New" fieldname="customer.name"/>
+        <string-field x="200" y="134" width="380" height="12" fontname="Courier New" fieldname="customer.address.street"/>
+        <string-field x="200" y="148" width="380" height="12" fontname="Courier New" fieldname="customer.address.city"/>
+        <string-field x="200" y="162" width="380" height="12" fontname="Courier New" fieldname="customer.address.psc"/>
+        <label        x="40"  y="176" width="150" height="12" fontname="Arial"  fsbold="true" alignment="right">Tel./Fax.:</label>
+        <string-field x="200" y="176" width="380" height="12" fontname="Courier New" fieldname="customer.tel"/>
+        
+        <label        x="40"  y="202" width="150" height="12" fontname="Arial"  fsbold="true" alignment="right">Předmět měření:</label>
+        <string-field x="200" y="202" width="380" height="12" fontname="Courier New" fieldname="objectOfMeasurement"/>
+
+        <label        x="40"  y="228" width="150" height="12" fontname="Arial"  fsbold="true" alignment="right">Datum měření:</label>
+        <string-field x="200" y="228" width="380" height="12" fontname="Courier New" fieldname="dateOfMeasurement"/>
+        <label        x="40"  y="242" width="150" height="12" fontname="Arial"  fsbold="true" alignment="right">Měřil:</label>
+        <string-field x="200" y="242" width="380" height="12" fontname="Courier New" fieldname="nameOfResponsiblePerson"/>
+        <label        x="40"  y="256" width="150" height="12" fontname="Arial"  fsbold="true" alignment="right">Měřící zařízení:</label>
+        <string-field x="200" y="256" width="380" height="12" fontname="Courier New" fieldname="nameOfMeasurementDevice"/>
+
+        <label        x="40"  y="282" width="80"  height="12" fontname="Arial"  fsbold="true" alignment="right">Index</label>
+        <string-field x="175" y="282" width="100" height="12" fontname="Arial"  fieldname="nameOfValueX" fsbold="true" alignment="right"/>
+        <string-field x="335" y="282" width="100" height="12" fontname="Arial"  fieldname="nameOfValueY" fsbold="true" alignment="right"/>
+
+        <line         x1="40" y1="298" x2="525" y2="298"   weight="2"/>
+
+        <rectangle x="40" y="304" width="485" height="14" color="#E0E0E0" fill="true" draw="false"/>
+        <label        x="40"  y="304" width="125"  height="14" fontname="Courier New" fontsize="12" vertical-alignment="middle" alignment="right">Hledané hodnoty:</label>
+	    <string-field x="175" y="304" width="100" height="14" fontname="Courier New" fontsize="12" vertical-alignment="middle" fieldname="xMarkerValue" alignment="right"/>
+	    <string-field x="277" y="304" width="48"  height="14" fontname="Courier New" fontsize="12" vertical-alignment="middle" fieldname="xMarkerUnit"  alignment="left"/>
+	    <string-field x="335" y="304" width="100" height="14" fontname="Courier New" fontsize="12" vertical-alignment="middle" fieldname="yMarkerValue" alignment="right"/>
+	    <string-field x="437" y="304" width="48"  height="14" fontname="Courier New" fontsize="12" vertical-alignment="middle" fieldname="yMarkerUnit"  alignment="left"/>
+
+      </groupheader>
+      <groupfooter height="324" fontsize="12">
+		<component-field name="RenderedResultField" x="95" y="20" width="400" height="230" dynamic="false" fieldname="chart"/>
+		<label        x="400"  y="260" width="200" height="14" fsbold="true" fontname="Arial">Podpis:</label>
+        <line         x1="400" y1="310" x2="550" y2="310"   weight="0.2" stroke-style="dotted"/>
+        <string-field x="400"  y="312" width="150" height="14" fontname="Courier New" fieldname="nameOfResponsiblePerson" alignment="center"/>
+      </groupfooter>
+      <fields>
+        <field>objectOfMeasurement</field>
+      </fields>
+    </group>
+  </groups>
+
+  <!-- Form has a max of 10 Itembands every item has a height of 20 points -->
+  <items height="14" fontname="Courier New" fontsize="12" vertical-alignment="middle">
+    <number-field x="40"  y="0" width="80"  height="14" fieldname="index"       alignment="right"/>
+    <string-field x="175" y="0" width="100" height="14" fieldname="valueXValue" alignment="right"/>
+    <string-field x="277" y="0" width="48"  height="14" fieldname="valueXUnit"  alignment="left"/>
+    <string-field x="335" y="0" width="100" height="14" fieldname="valueYValue" alignment="right"/>
+    <string-field x="437" y="0" width="48"  height="14" fieldname="valueYUnit"  alignment="left"/>
+  </items>
+
+</report>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.units">
+  <class name="UnitDescription" table="UNIT_DESCRIPTION">
+  	<id name="id" column="UNIT_INDEX">
+  		<generator class="increment"></generator>
+  	</id>
+  	<property name="name"></property>
+  	<property name="shortcut"></property>
+  	<property name="prefixAvailable"></property>
+  	<map name="conversions" table="UNIT_CONVERSION" cascade="all" lazy="false">
+  		<key column="FROM_UNIT"></key>
+  		<map-key column="TO_UNIT" type="integer" />
+  		<one-to-many class="UnitConversion" />
+  	</map>
+  </class>
+</hibernate-mapping>

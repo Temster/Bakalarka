@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unisave_user_setting file_version="1">
+ <lastUsedDir value="C:\Users\vlaci_000\Documents"/>
+ <recentFiles>
+ </recentFiles>
+ <portList>
+  <portName name="com4" fileName="com4"/>
+  <portName name="com2" fileName="com2"/>
+  <portName name="com3" fileName="com3"/>
+  <portName name="com1" fileName="com1"/>
+ </portList>
+ <lastUsedPort value="com3"/>
+ <lastUsedDevice value="2"/>
+ <lastUsedSecondDevice value="5"/>
+ <lastUsedUnit prefix="0" description="2"/>
+ <lastUsedYUnit prefix="0" description="2"/>
+ <numberFormat>
+  <maxNumberOfFloatDigit value="2"/>
+  <exponentFormat value="false"/>
+  <fillByZerro value="true"/>
+ </numberFormat>
+ <lastUsedXName value="First value"/>
+ <lastUsedYName value="Second value"/>
+ <lastUsedAutoConvert value="false"/>
+ <lastUsedAutoIndex value="false"/>
+ <lastUsedXMarker value="null"/>
+ <lastUsedYMarker value="null"/>
+ <lastUsedXMarkerFixed value="true"/>
+ <lastUsedYMarkerFixed value="false"/>
+ <protocolSetting>
+  <customer>
+   <name value="Customer"/>
+   <address>
+    <city value="Ostrava"/>
+    <street value="Porubska"/>
+    <psc value="70032"/>
+   </address>
+   <tel value="987654321"/>
+  </customer>
+  <dateOfMeasurement value="22.5.13 20:35"/>
+  <laboratory>
+   <name value="Lab"/>
+   <address>
+    <city value="Ostrava"/>
+    <street value="Studentska"/>
+    <psc value="70800"/>
+   </address>
+   <tel value="123456789"/>
+  </laboratory>
+  <measurementTitle value="Test measure"/>
+  <objectOfMeasurement value="Mes_obj"/>
+ </protocolSetting>
+ <graphSetting>
+  <graphTitle value="Graf hodnot"/>
+  <xAxisAutomaticalLabeling value="true"/>
+  <yAxisAutomaticalLabeling value="true"/>
+  <xAxisManualLabel value=""/>
+  <yAxisManualLabel value=""/>
+  <sortValues value="true"/>
+  <graphOrientation value="vertical"/>
+ </graphSetting>
+</unisave_user_setting>

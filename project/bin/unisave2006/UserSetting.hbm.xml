@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006">
+  <class name="UserSetting">
+  	<id name="id" column="USER_SETT_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="lastUsedDirPath"></property>
+  	<property name="lastUsedPortName"></property>
+  	<property name="numberFormat"></property>
+  	<property name="maxNumberOfFloatDigit"></property>
+  	<property name="exponentFormat"></property>
+  	<property name="fillByZerro"></property>
+  	<property name="lastUsedXName"></property>
+  	<property name="lastUsedYName"></property>
+  	<property name="lastUsedAutoConvert"></property>
+  	<property name="lastUsedAutoIndex"></property>
+  	<property name="lastUsedXMarkerFixed"></property>
+  	<property name="lastUsedYMarkerFixed"></property>
+  	  
+  	<set name="portNames" cascade="save-update">
+  		<key column="USER_SETT_ID" not-null="true"></key>
+  		<one-to-many class="unisave2006.PortName" />
+  	</set>
+  	
+  	<many-to-one name="lastUsedDevice"
+  		class="unisave2006.device.MeasurementDevice" cascade="save-update">
+  	</many-to-one>
+  	<many-to-one name="lastUsedSecondDevice"
+  		class="unisave2006.device.MeasurementDevice" cascade="save-update">
+  	</many-to-one>
+
+  	<many-to-one name="lastUsedUnit" class="unisave2006.units.Unit"
+  		cascade="save-update">
+  	</many-to-one>
+  	<many-to-one name="lastUsedYUnit" class="unisave2006.units.Unit"
+  		cascade="save-update">
+  	</many-to-one>
+  	
+  	<many-to-one name="lastUsedProtocolSetting" class="unisave2006.data.ProtocolSetting" 
+  	cascade="all" unique="true"></many-to-one>
+  	<many-to-one name="lastUsedGraphSetting" class="unisave2006.data.GraphSetting" 
+  	cascade="all" unique="true"></many-to-one>
+  	
+  	<many-to-one name="lastUsedXMarker" class="unisave2006.data.value.Value" 
+  	cascade="save-update"></many-to-one>
+  	<many-to-one name="lastUsedYMarker" class="unisave2006.data.value.Value"
+  	cascade="save-update"></many-to-one>
+  	
+  </class>
+</hibernate-mapping>

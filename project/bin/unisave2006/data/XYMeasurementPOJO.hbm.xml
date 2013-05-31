@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.data">
+  <subclass name="XYMeasurementPOJO" extends="MeasurementPOJO" discriminator-value="XYM">
+  
+  	<property name="XValueName"></property>
+  	<property name="YValueName"></property>
+  	<property name="ignoreGroweXValue"></property>
+  	<property name="XMarkerFixed"></property>
+  	<property name="YMarkerFixed"></property>
+  	
+  	<many-to-one name="YAutoconvertUnit" class="unisave2006.units.Unit" cascade="save-update"></many-to-one>
+  	<many-to-one name="XMarker" class="unisave2006.data.value.Value" cascade="all"></many-to-one>
+  	<many-to-one name="YMarker" class="unisave2006.data.value.Value" cascade="all"></many-to-one>
+  	<many-to-one name="graphSetting" class="GraphSetting" cascade="save-update"></many-to-one>
+  	
+  </subclass>
+</hibernate-mapping>

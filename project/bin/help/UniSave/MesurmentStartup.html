@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="cs">
+<link rel="stylesheet" type="text/css" href="UniSave2006.css">
+<title>Spuštění měření</title>
+</head>
+
+<body>
+
+<h1>Spuštění měření</h1>
+
+<p>Spuštění celého procesu načítání se skládá z následujících kroků:</p>
+<ol>
+	<li>Před spuštěním procesu načítání hodnot je nejprve nutno propojit měřidla s 
+počítačem podle pokynů výrobce měřidla (obecné pravidla lze najít
+	<a href="PortSelection.html">zde</a>). Pokud je nutno připojit k počítači 
+	dvě měřidla, musí se tyto měřidla připojit k rozhraní DMX2&nbsp; a toto rozhraní 
+se pak připojí na sériový port počítače. Poté je tedy nutno vybrat sériový port 
+počítače, ke kterému je měřidlo připojeno. Sériové porty se označují zkratkou
+	<code>com</code> a číslem, které může být v rozmezí 1-99. Po prvním spuštění 
+program nabízí možnost zvolit si jeden ze sériových portů <code>com1</code> - <code>com4</code>, 
+které se v počítačích vyskytují nejčastěji. Pokud je měřidlo připojeno k jinak 
+označenému sériovému portu, je třeba přidat označení tohoto portu v dialogovém 
+okně
+<a href="SettingDialog.html">Nastavení</a>.<br>
+	<br>
+	<img border="0" src="../images/mesurmentStartup.jpg" width="382" height="142"><br>
+&nbsp;</li>
+	<li>Tlačítkem <code>Start</code> spustíme proces načítání v počítači. Nyní 
+	počítač čeká, až měřidlo zašle data, ty jsou pak analyzována a převedena na 
+	hodnotu, která je zobrazena v tabulce naměřených hodnot.</li>
+	<li>Na měřidle je třeba zajistit, aby odeslalo naměřenou hodnotu nebo hodnoty 
+	do počítače. Zde je nutno se řídit pokyny výrobce měřidla. Obecně mohou 
+	měřidla pracovat dvěma způsoby, buď je naměřená hodnota okamžitě zasílána do 
+	počítače, nebo u měřidel s vlastní pamětí jsou dříve naměřené hodnoty zaslány 
+	do počítače najednou.</li>
+	<li>Po ukončení měření s měřidlem je třeba proces načítání zastavit 
+	stisknutím tlačítka <code>Stop</code>.</li>
+</ol>
+
+</body>
+
+</html>

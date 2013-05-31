@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006">
+  <class name="PortName">
+  	<id name="id" column="PORT_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="name"></property>
+  	<property name="fileName"></property>
+  	<property name="portIndex"></property>
+  </class>
+</hibernate-mapping>

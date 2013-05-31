@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.device">
+  <class name="CommSettings" table="COMM_SETTINGS">
+  	<id name="id" column="COM_SETT_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="baudRate"/>
+  	<property name="byteSize"/>
+  	<property name="DCBlength"/>
+  	<property name="eofChar"/>
+  	<property name="ErrorChar"/>
+  	<property name="EvtChar"/>
+  	<property name="FAbrotOnError"/>
+  	<property name="FBinary"/>
+  	<property name="FDsrSensitivity"/>
+  	<property name="FDtrControl"/>
+  	<property name="FDummy2"/>
+  	<property name="FErrorChar"/>
+  	<property name="FInX"/>
+  	<property name="FNull"/>
+  	<property name="FOutX"/>
+  	<property name="FOutxCtsFlow"/>
+  	<property name="FOutxDsrFlow"/>
+  	<property name="FParity"/>
+  	<property name="FRtsControl"/>
+  	<property name="FTXContinueOnXoff"/>
+  	<property name="Parity"/>
+  	<property name="stopBits"/>
+  	<property name="XoffChar"/>
+  	<property name="XoffLim"/>
+  	<property name="XonChar"/>
+  	<property name="XonLim"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="cs">
+<link rel="stylesheet" type="text/css" href="UniSave2006.css">
+<title>Jak vybrat správný sériový port?</title>
+</head>
+
+<body>
+
+<h1><b>Jak vybrat správný sériový port?</b></h1>
+
+<p>Sériové porty mohou být dvou typů, jak je zobrazeno na Obr. 1 a Obr. 2. </p>
+
+<p>Starší počítače většinou mají sériový port <b>com1</b> typu 1<span lang="en-us">;</span> na ten bývá 
+připojena myš. Sériový port <b>com2</b> pak bývá typu 2.</p>
+
+<p>Novější počítače mívají oba dva sériové porty typu 1, některé modely počítačů jsou opatřeny popisy jednotlivých portů. Pokud popisy chybí, je třeba vyzkoušet 
+načítání hodnot z portu <b>com1</b> nebo <b>com2</b>.</p>
+<div align="center">
+  <center>
+<table border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="0*" id="table2">
+  <tr>
+    <td width="0*" align="center">
+	<p class="ImageParagraph"><img border="0" src="../images/picture_com1.jpg" width="96" height="44"></td>
+    <td width="50" align="center">&nbsp;</td>
+    <td width="0*" align="center">
+    <p class="ImageParagraph">
+    <img border="0" src="../images/picture_com2.jpg" width="244" height="44"></td>
+  </tr>
+  <tr>
+    <td width="0*" align="center"><b>Obr. 1</b><p style="text-align: center"><b>Sériový port typ 1</b></td>
+    <td width="50" align="center">&nbsp;</td>
+    <td width="0*" align="center"><b>Obr. 2</b><p style="text-align: center"><b>Sériový port typ 2</b></td>
+  </tr>
+</table>
+
+  </center>
+</div>
+
+<h2>Infračervený port</h2>
+<p>Pokud připojujeme měřící přístroj k počítači pomocí infračerveného portu, je 
+třeba zvolit port, ke kterému je připojen kabel od infračerveného portu.</p>
+
+<h2>Redukce na USB</h2>
+<p>V obchodech s počítačovou technikou jsou dnes běžně k dostání redukce 
+sériového portu na USB, což umožní připojit měřící zařízení například k 
+notebookům, které nemají sériový port.</p>
+<p>Při prvním připojení redukce do počítače je třeba nainstalovat ovladače 
+dodané výrobcem redukce, pokud systém automaticky zařízení nerozpozná (ovladače 
+jsou již obsaženy ve výchozí instalaci systému Windows).</p>
+<p>Následně je třeba zjistit, pod jakým sériovým portem se skrývá připojená 
+redukce, to zjistíme ve Správci zařízení. Správce zařízení spustíme kliknutím na 
+tlačítko Start, poté na nabídku Ovládací panel, zde je nutno vybrat kategorii 
+Výkon a údržba a v ní ikonu Systém. Ve zobrazeném dialogovém okně je nutno 
+vybrat záložku Hardware a kliknout na tlačítko Správce zařízení.</p>
+<p>Ve správci zařízení je třeba rozbalit seznam Porty (COM a LPT). Tento seznam 
+obsahuje seznam všech sériových a paralelních portů v počítači. Zde je také 
+obsažen sériový port připojené redukce. Jeho název, například COM4 nebo COM8 je 
+nutno uvést v programu UniSave. Pokud nejde v <a href="MainFrame.html">okně 
+měření</a> nastavit tento sériový port, je nutno jej přidat v dialogovém okně
+<a href="SettingDialog.html">Nastavení</a>.</p>
+
+</body>
+
+</html>

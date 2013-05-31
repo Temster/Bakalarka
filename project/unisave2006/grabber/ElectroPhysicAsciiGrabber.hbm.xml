@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.grabber">
+  <subclass name="ElectroPhysicAsciiGrabber" extends="AsciiGrabber" discriminator-value="ELE">
+  	<property name="blockString"></property>
+  	<property name="statBlockSeparator"></property>
+  	
+  	<map name="stringToUnitMap" lazy="false">
+  		<key column="STRING_GRAB_ID"></key>
+  		<map-key column="shortcut" type="string" />
+  		<one-to-many class="unisave2006.units.Unit" />
+  	</map>
+  	<map name="stringToStatTypeMap" table="STRING_TO_STAT_TYPE" lazy="false">
+  		<key column="ELEK_GRAB_ID"></key>
+  		<map-key column="STRING" type="string" />
+  		<element column="STAT_TYPE" type="integer" />
+  	</map>
+  </subclass>
+</hibernate-mapping>

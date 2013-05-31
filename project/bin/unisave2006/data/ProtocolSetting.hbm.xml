@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.data">
+  <class name="ProtocolSetting">
+  	<id name="id" column="PROT_SETTING_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<property name="measurementTitle"/>
+  	<property name="objectOfMeasurement"/>
+  	<property name="dateOfMeasurement"/>
+  	<many-to-one name="measurer" class="Measurer" cascade="all"/>
+  	<many-to-one name="responsiblePerson" class="Employee"
+  			cascade="all" />
+  	<many-to-one name="laboratory" class="Organization"
+  		column="LABORATORY" cascade="all" />
+  	<many-to-one name="customer" class="Organization" column="CUSTOMER" cascade="all"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN" "http://java.sun.com/products/javahelp/map_2_0.dtd">
+<map version="2.0" xml:lang="cs">
+	<mapID target="UniSaveIcon" url="../resource/icons/UniSave.gif"/>
+
+	<mapID target="ExtendedSetting" url="UniSave/ExtendedSettting.html"/>
+	<mapID target="Graph" url="UniSave/Graph.html"/>
+	<mapID target="GraphSetting" url="UniSave/GraphSetting.html"/>
+	<mapID target="index" url="UniSave/index.html"/>
+	<mapID target="MainFrame" url="UniSave/MainFrame.html"/>
+	<mapID target="Markers" url="UniSave/Markers.html"/>
+	<mapID target="MesurmentStartup" url="UniSave/MesurmentStartup.html"/>
+	<mapID target="PortSelection" url="UniSave/PortSelection.html"/>
+	<mapID target="Protocol" url="UniSave/Protocol.html"/>
+	<mapID target="ProtocolSetting" url="UniSave/ProtocolSetting.html"/>
+	<mapID target="SettingDialog" url="UniSave/SettingDialog.html"/>
+	<mapID target="UnitConversion" url="UniSave/UnitConversion.html"/>
+	<mapID target="ValuePanel" url="UniSave/ValuePanel.html"/>
+</map>

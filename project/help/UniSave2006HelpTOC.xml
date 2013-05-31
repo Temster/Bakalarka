@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 2.0//EN" "http://java.sun.com/products/javahelp/toc_2_0.dtd">
+<toc version="2.0" xml:lang="cs">
+	<tocitem image="toplevelfolder" target="index" text="Nápověda k UniSave 2006">
+		<tocitem target="MainFrame" text="Hlavní okno apliakce">
+			<tocitem text="Měření">
+				<tocitem target="ValuePanel" text="Zobrazování hodnot"/>
+				<tocitem target="ExtendedSetting" text="Rozšířené nastavení"/>
+				<tocitem target="MesurmentStartup" text="Odstartovaní měření"/>
+			</tocitem>
+			<tocitem target="GraphSetting" text="Nastavení grafu"/>
+			<tocitem target="ProtocolSetting" text="Nastavení protokolu"/>
+		</tocitem>
+		<tocitem target="Graph" text="Graf"/>
+		<tocitem target="Markers" text="Nalezení hodnot"/>
+		<tocitem target="SettingDialog" text="Globální nastavení"/>
+		<tocitem target="UnitConversion" text="Převod jednotek"/>
+		<tocitem target="PortSelection" text="Výběr portu"/>
+		<tocitem target="Protocol" text="Protokol o měření"/>
+	</tocitem>
+</toc>

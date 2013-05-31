@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.device">
+  <subclass name="DoubleMeasurementDevice" extends="MeasurementDevice" discriminator-value="DMD">
+  	<many-to-one name="dev1" class="unisave2006.device.MeasurementDevice" column="dev1"></many-to-one>
+  	<many-to-one name="dev2" class="unisave2006.device.MeasurementDevice" column="dev2"></many-to-one>
+  </subclass>
+</hibernate-mapping>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unisave_setting>
+ <savetoDB>true</savetoDB>
+ <commBridgeExeFile>CommBridge.exe</commBridgeExeFile>
+ <reportXYFile>resource/reportXY.xml</reportXYFile>
+ <recentFileMaxCount>4</recentFileMaxCount>
+ </unisave_setting>

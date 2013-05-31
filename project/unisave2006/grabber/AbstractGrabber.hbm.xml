@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.grabber">
+  <subclass name="AbstractGrabber" extends="GrabberInterface" discriminator-value="ABS">
+  	<many-to-one name="measurement" class="unisave2006.data.MeasurementPOJO"></many-to-one>
+  	<list name="posibleUnits" table="POSIBLE_UNITS_GRABBER">
+  		<key column="GRABBER_ID"></key>
+  		<list-index column="POSITION"></list-index>
+  		<many-to-many column="UNIT_INDEX"
+  			class="unisave2006.units.UnitDescription">
+  		</many-to-many>
+  	</list>
+  </subclass>
+</hibernate-mapping>

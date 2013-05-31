@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesurmentDevices>
+	<mesurmentDevice name="Digimar CX1">
+		<device comDeviceType="1">
+			<clearInputBuffer value="0"/>
+			<comTimeouts>
+				<readIntervalTimeout value="100"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="9600"/>
+				<byteSize value="8"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="0"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="0"/>
+				<stopBits value="2"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="5">
+			<autoIndexing value="1"/>
+			<countOnlyNumbersAfterDecimalPoint value="1"/>
+			<posibleUnits>
+				<posibleUnit value="2"/>
+				<posibleUnit value="5"/>
+			</posibleUnits>
+			<unitsMapping>
+				<posibleUnitsMap digits="4" prefix="-3" unit="2"/>
+				<posibleUnitsMap digits="5" prefix="0" unit="5"/>
+			</unitsMapping>
+			<valueEndChar value="13"/>
+			<valueOffset value="0"/>
+			<valueTruncate value="0"/>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="eXacto (F,N,FN)">
+		<device comDeviceType="2">
+			<autoEchoSequence value="0"/>
+			<sendEcho value="1"/>
+			<comTimeouts>
+				<readIntervalTimeout value="2"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="9600"/>
+				<byteSize value="8"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="0"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="0"/>
+				<stopBits value="0"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="2">
+			<autoIndexing value="0"/>
+			<posibleUnits>
+				<posibleUnit value="2"/>
+				<posibleUnit value="4"/>
+			</posibleUnits>
+			<unitsMapping>
+				<posibleUnitsMap shortcut="um" prefix="-6" unit="2"/>
+				<posibleUnitsMap shortcut="mm" prefix="-3" unit="2"/>
+				<posibleUnitsMap shortcut="mils" prefix="0" unit="4"/>
+			</unitsMapping>
+			<valueEndChar value="13"/>
+			<valueOffset value="0"/>
+			<valueTruncate value="0"/>
+			<blockString value="Block"/>
+			<stat>
+				<statBlockSeparator value="Statistics"/>
+				<statType string="N" id="0"/>
+				<statType string="Mean" id="1"/>
+				<statType string="St.D" id="2"/>
+				<statType string="Max" id="3"/>
+				<statType string="Min" id="4"/>
+			</stat>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="MiniTest (1100,2100,3100,4100)">
+		<device comDeviceType="1">
+			<clearInputBuffer value="0"/>
+			<comTimeouts>
+				<readIntervalTimeout value="100"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="9600"/>
+				<byteSize value="8"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="0"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="0"/>
+				<stopBits value="0"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="2">
+			<autoIndexing value="0"/>
+			<posibleUnits>
+				<posibleUnit value="2"/>
+				<posibleUnit value="4"/>
+			</posibleUnits>
+			<unitsMapping>
+				<posibleUnitsMap shortcut="um" prefix="-6" unit="2"/>
+				<posibleUnitsMap shortcut="mm" prefix="-3" unit="2"/>
+				<posibleUnitsMap shortcut="mils" prefix="0" unit="4"/>
+			</unitsMapping>
+			<valueEndChar value="13"/>
+			<valueOffset value="0"/>
+			<valueTruncate value="0"/>
+			<blockString value="Block"/>
+			<stat>
+				<statBlockSeparator value="STATISTICS"/>
+				<statType string="N-Val" id="0"/>
+				<statType string="Mean" id="1"/>
+				<statType string="St.D" id="2"/>
+				<statType string="Max" id="3"/>
+				<statType string="Min" id="4"/>
+				<statType string="Kvar" id="5"/>
+				<statType string="N-GRP" id="0"/>
+				<statType string="MEAN" id="1"/>
+				<statType string="ST.D" id="2"/>
+				<statType string="KVAR" id="5"/>
+				<statType string="MAX" id="3"/>
+				<statType string="MIN" id="4"/>
+			</stat>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="MiniTest 600(B-F,B-N,B-FN,F,N,FN)">
+		<device comDeviceType="1">
+			<clearInputBuffer value="0"/>
+			<comTimeouts>
+				<readIntervalTimeout value="100"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="1200"/>
+				<byteSize value="8"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="0"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="0"/>
+				<stopBits value="0"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="2">
+			<autoIndexing value="0"/>
+			<posibleUnits>
+				<posibleUnit value="2"/>
+				<posibleUnit value="4"/>
+			</posibleUnits>
+			<unitsMapping>
+				<posibleUnitsMap shortcut="um" prefix="-6" unit="2"/>
+				<posibleUnitsMap shortcut="mm" prefix="-3" unit="2"/>
+				<posibleUnitsMap shortcut="mils" prefix="0" unit="4"/>
+			</unitsMapping>
+			<valueEndChar value="13"/>
+			<valueOffset value="0"/>
+			<valueTruncate value="0"/>
+			<blockString value="Block"/>
+			<stat>
+				<statBlockSeparator value="STATISTICS"/>
+				<statType string="N" id="0"/>
+				<statType string="Mean" id="1"/>
+				<statType string="St.D" id="2"/>
+				<statType string="Max" id="3"/>
+				<statType string="Min" id="4"/>
+			</stat>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="Délková Měřidla Mitutoyo s rozhraním DMX1">
+		<device comDeviceType="1">
+			<clearInputBuffer value="0"/>
+			<comTimeouts>
+				<readIntervalTimeout value="100"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="9600"/>
+				<byteSize value="8"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="0"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="0"/>
+				<stopBits value="0"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="4">
+			<autoIndexing value="1"/>
+			<defaultUnit prefix="-3" unit="2"/>
+			<posibleUnits>
+				<posibleUnit value="2"/>
+			</posibleUnits>
+			<valueEndChar value="13"/>
+			<valueOffset value="3"/>
+			<valueTruncate value="0"/>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="Siloměr Mitutoyo DMX1">
+		<device comDeviceType="1">
+			<clearInputBuffer value="0"/>
+			<comTimeouts>
+				<readIntervalTimeout value="100"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="9600"/>
+				<byteSize value="8"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="0"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="0"/>
+				<stopBits value="0"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="4">
+			<autoIndexing value="1"/>
+			<defaultUnit prefix="0" unit="10"/>
+			<posibleUnits>
+				<posibleUnit value="10"/>
+			</posibleUnits>
+			<valueEndChar value="13"/>
+			<valueOffset value="3"/>
+			<valueTruncate value="0"/>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="Preisser Digi-Met">
+		<device comDeviceType="1">
+			<clearInputBuffer value="0"/>
+			<comTimeouts>
+				<readIntervalTimeout value="100"/>
+				<readTotalTimeoutConstant value="500"/>
+				<readTotalTimeoutMultiplier value="0"/>
+				<writeTotalTimeoutConstant value="0"/>
+				<writeTotalTimeoutMultiplier value="0"/>
+			</comTimeouts>
+			<commSettings>
+				<baudRate value="4800"/>
+				<byteSize value="7"/>
+				<DCBlength value="28"/>
+				<eofChar value="0"/>
+				<ErrorChar value="0"/>
+				<EvtChar value="0"/>
+				<fAbrotOnError value="0"/>
+				<fBinary value="1"/>
+				<fDsrSensitivity value="0"/>
+				<fDtrControl value="1"/>
+				<fDummy2 value="0"/>
+				<fErrorChar value="1"/>
+				<fInX value="0"/>
+				<fNull value="0"/>
+				<fOutX value="0"/>
+				<fOutxCtsFlow value="0"/>
+				<fOutxDsrFlow value="0"/>
+				<fParity value="1"/>
+				<fRtsControl value="1"/>
+				<fTXContinueOnXoff value="0"/>
+				<Parity value="2"/>
+				<stopBits value="2"/>
+				<XoffChar value="19"/>
+				<XoffLim value="512"/>
+				<XonChar value="17"/>
+				<XonLim value="2048"/>
+			</commSettings>
+		</device>
+		<grabber type="5">
+			<autoIndexing value="1"/>
+			<countOnlyNumbersAfterDecimalPoint value="0"/>
+			<posibleUnits>
+				<posibleUnit value="2"/>
+				<posibleUnit value="5"/>
+			</posibleUnits>
+			<unitsMapping>
+				<posibleUnitsMap digits="6" prefix="-3" unit="2"/>
+				<posibleUnitsMap digits="7" prefix="0" unit="5"/>
+			</unitsMapping>
+			<valueEndChar value="13"/>
+			<valueOffset value="0"/>
+			<valueTruncate value="0"/>
+		</grabber>
+	</mesurmentDevice>
+	<mesurmentDevice name="Ruční vkládání">
+		<device comDeviceType="3">
+		</device>
+		<grabber type="3">
+			<posibleUnits value="all"/>
+		</grabber>
+	</mesurmentDevice>
+</mesurmentDevices>

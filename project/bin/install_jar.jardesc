@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="C:/Documents and Settings/pha016/Desktop/UniSave2006.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/UniSave2006Implementation/install_jar.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/UniSave2006Implementation/Metafile" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/UniSave2006Implementation/resource/icons/copy_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/units.xml"/>
+        <file path="/UniSave2006Implementation/resource/icons/histogram.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.data.value"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;com.sun.swing.internal.plaf.synth.resources"/>
+        <file path="/UniSave2006Implementation/resource/icons/save_edit_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/cut.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;org.jfree.chart"/>
+        <file path="/UniSave2006Implementation/resource/unisave_setting.xml"/>
+        <file path="/UniSave2006Implementation/resource/icons/save_edit.gif"/>
+        <file path="/UniSave2006Implementation/log4j.properties"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.units"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.grabber"/>
+        <file path="/UniSave2006Implementation/resource/icons/newfile_wiz.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/JezekLogoSmall.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;org.jfree.chart.editor"/>
+        <file path="/UniSave2006Implementation/resource/icons/right.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/graf_orientation_icon_horizontal.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.gui.graph"/>
+        <file path="/UniSave2006Implementation/resource/icons/openfile_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/reportXY.xml"/>
+        <file path="/UniSave2006Implementation/resource/icons/graph.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/delete.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/UnimetraLogoSmall.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/left.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.data"/>
+        <file path="/UniSave2006Implementation/resource/pictures/graf_orientation_icon_vertical.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/graph_small.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;org.jfree.data.resources"/>
+        <file path="/UniSave2006Implementation/resource/icons/down.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.gui.action"/>
+        <file path="/UniSave2006Implementation/resource/icons/histogram_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/copy.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/UniSave2006_background_screen.png"/>
+        <file path="/UniSave2006Implementation/resource/icons/openfile.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;com.sun.swing.internal.plaf.basic.resources"/>
+        <file path="/UniSave2006Implementation/resource/icons/deleteLast_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/UniSave.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/UniSave2006_splash_screen.png"/>
+        <file path="/UniSave2006Implementation/resource/icons/cut_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/unitConversion_small.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.dao.device"/>
+        <file path="/UniSave2006Implementation/resource/icons/unitConversion.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/copy_small.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.gui.value"/>
+        <file path="/UniSave2006Implementation/resource/icons/createProtocol_small.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.device"/>
+        <file path="/UniSave2006Implementation/hibernate.cfg.xml"/>
+        <file path="/UniSave2006Implementation/resource/icons/deleteLast.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/createProtocol.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/UniSaveDoc.gif"/>
+        <file path="/UniSave2006Implementation/resource/icons/fldr_obj.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.dao"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.gui"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;com.sun.swing.internal.plaf.metal.resources"/>
+        <file path="/UniSave2006Implementation/resource/mesurmentDevice.xml"/>
+        <file path="/UniSave2006Implementation/resource/icons/delete_small.gif"/>
+        <file path="/UniSave2006Implementation/resource/pictures/UniSaveLogoSmall.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.dao.data"/>
+        <file path="/UniSave2006Implementation/resource/icons/newfile_wiz_small.gif"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;unisave2006.dao.units"/>
+        <file path="/UniSave2006Implementation/resource/upozorneni.wav"/>
+    </selectedElements>
+</jardesc>

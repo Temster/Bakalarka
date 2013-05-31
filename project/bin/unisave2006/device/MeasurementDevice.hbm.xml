@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="unisave2006.device">
+  <class name="MeasurementDevice" table="MEASUREMENT_DEVICE" discriminator-value="MSD">
+  	<id name="id" column="DEV_ID">
+  		<generator class="native"></generator>
+  	</id>
+  	<discriminator column="DISCRIMINATOR" type="string"/>
+  	<property name="name"></property>
+  	<many-to-one name="commSetting" class="unisave2006.device.CommDeviceSetting" column="COM_DEV_SETT" lazy="false"></many-to-one>
+  	<many-to-one name="grabber" class="unisave2006.grabber.GrabberInterface" column="GRABBER"></many-to-one>
+  </class>
+</hibernate-mapping>

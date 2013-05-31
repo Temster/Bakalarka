@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Documents and Settings/jez04/My Documents/projekty/UniSave2006/deployment/UniSave2006Help.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/UniSave2006Implementation/help_jar.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/UniSave2006Implementation/Metafile_help" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;help.UniSave"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;help.JavaHelpSearch"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;help.images"/>
+        <javaElement handleIdentifier="=UniSave2006Implementation/&lt;help"/>
+    </selectedElements>
+</jardesc>
